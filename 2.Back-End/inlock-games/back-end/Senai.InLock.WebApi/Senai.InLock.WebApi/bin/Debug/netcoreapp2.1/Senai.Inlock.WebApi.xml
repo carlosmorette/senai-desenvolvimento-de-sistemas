@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.Inlock.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Senai.InLock.WebApi.Controller.JogoController.Get">
+            <summary>
+            Get de Jogos
+            </summary>
+            <returns>Retorna uma lista de jogos</returns>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Repositories.JogoRepository.Listar">
+            <summary>
+            Listar jogos
+            </summary>
+            <returns>Lista de jogos</returns>
+        </member>
+    </members>
+</doc>
