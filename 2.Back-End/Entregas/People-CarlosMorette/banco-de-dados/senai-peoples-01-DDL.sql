@@ -1,0 +1,28 @@
+CREATE DATABASE M_Peoples;
+GO
+
+USE M_Peoples;
+GO
+
+CREATE TABLE Funcionario(
+	Id_Funcionario INT PRIMARY KEY IDENTITY,
+	Nome VARCHAR(200) NOT NULL,
+	Sobrenome VARCHAR(200) NOT NULL
+);
+GO
+
+-- TOKEN
+CREATE TABLE TipoUsuario(
+	IdTipoUsuario INT PRIMARY KEY IDENTITY,
+	Titulo VARCHAR(200)
+);
+GO
+
+CREATE TABLE Usuario(
+	IdUsuario INT PRIMARY KEY IDENTITY,
+	Nome VARCHAR(200),
+	Email VARCHAR(200),
+	Senha VARCHAR(200),
+	IdTipoUsuario INT FOREIGN KEY REFERENCES TipoUsuario(IdTipoUsuario)
+);
+GO
